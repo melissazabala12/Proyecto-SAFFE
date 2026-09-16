@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFFE - Historial de Accesos</title>
+
+    <link rel="stylesheet" href="/css/detalles_usuario.css">
+</head>
+
+<body>
+
+<header>
+    <img src="/img/logo.png" alt="logo SAFFE" width="100">
+    <h1>SAFFE</h1>
+    <h2>Registro de Accesos al Sistema</h2>
+</header>
+
+<main>
+
+    <section class="tabla-container">
+
+        <table class="tabla-accesos">
+
+            <thead>
+                <tr>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Hora Ingreso</th>
+                    <th>Día</th>
+                    <th>Mes</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+
+            <tbody id="cuerpo-tabla">
+                <!-- Aquí se llenan los datos -->
+            </tbody>
+
+        </table>
+
+        <div class="botones-container">
+
+            <!-- BOTÓN PARA VOLVER A ACCESO AUTORIZADO -->
+            <button class="btn-atras"
+                onclick="window.location.href='/acceso_autorizado'">
+                Volver a Acceso Autorizado
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="/js/detalles_usuario.js"></script>
+
+</body>
+</html>

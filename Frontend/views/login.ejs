@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAFFE - Inicio de Sesión</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="/img/logo.png" alt="Logo SAFFE" width="100">
+
+    <h1>SAFFE</h1>
+
+    <h2>Sistema de Control de Acceso Ejército Nacional</h2>
+
+</header>
+
+<main>
+
+    <section aria-labelledby="login-title">
+
+        <h3 id="login-title">Iniciar sesión</h3>
+
+       <form id="loginForm">
+
+            <label for="user">Correo electrónico</label>
+
+            <input
+                id="user"
+                type="text"
+                name="correo"
+                placeholder="Ingrese su correo"
+                required
+            >
+
+            <label for="password">Contraseña</label>
+
+            <input
+                id="password"
+                type="password"
+                name="contraseña"
+                placeholder="Ingrese su clave"
+                required
+            >
+
+            <a href="#">¿Olvidaste la contraseña?</a>
+
+            <button type="submit">
+
+                Ingresar
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <button
+        class="btn-biometrico"
+        onclick="window.location='/escaneo'">
+
+        Ingresar con reconocimiento facial
+
+    </button>
+
+</main>
+
+<footer>
+
+    <p>© 2025 SAFFE - Sistema de Control de Acceso</p>
+
+</footer>
+
+<!-- JavaScript -->
+<script type="module" src="/js/main.js"></script>
+
+</body>
+
+</html>

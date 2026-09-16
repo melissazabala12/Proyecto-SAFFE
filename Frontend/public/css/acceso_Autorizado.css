@@ -1,0 +1,113 @@
+/* Reseteo básico y centrado de la pantalla completa */
+body {
+    background: #f2f2f2; /* Fondo gris claro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    margin: 0;
+}
+
+/* Tarjeta blanca central */
+.formulario {
+    background: white;
+    padding: 35px 28px;
+    width: 380px; /* Ancho fijo para PC */
+    text-align: center;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.12); /* Sombra suave */
+    border: 2px solid #dcdcdc;
+}
+
+/* Estilos de las imágenes y títulos */
+.logo {
+    width: 85px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 26px;
+    color: #1b7a3a; /* Verde institucional */
+    margin: 5px 0 15px;
+}
+
+.icono-autorizado {
+    width: 140px;
+    margin: 10px 0 5px;
+}
+
+.titulo-verde {
+    color: #1b7a3a;
+    font-size: 24px;
+    margin: 5px 0 15px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #1b7a3a;
+    font-size: 18px;
+}
+
+/* Caja donde salen los datos del militar */
+.caja-datos {
+    background: #ffffff;
+    border: 2px solid #1b7a3a; /* Borde verde para resaltar */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left; /* Alineación a la izquierda para mejor lectura */
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Estilos generales para botones */
+.boton {
+    width: 160px;
+    padding: 12px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer; /* Cambia el cursor a una manito */
+    font-weight: bold;
+}
+
+/* Colores específicos de botones */
+.boton-verde {
+    background: #1b7a3a;
+    color: white;
+}
+
+.boton-gris {
+    background: #555;
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #444;
+}
+
+hr {
+    margin-top: 25px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* -------- VERSION MÓVIL (Media Query) -------- */
+/* Esto asegura la Evidencia 1 (Diseño Responsivo) */
+@media (max-width: 600px) {
+    .formulario {
+        width: 100%;
+        max-width: 360px;
+        padding: 30px 20px;
+        border: none;
+        box-shadow: none; /* Quitamos la sombra en móviles para un diseño más plano */
+    }
+    .boton {
+        width: 100%; /* Los botones ocupan todo el ancho en el celular */
+        padding: 12px 0;
+    }
+}

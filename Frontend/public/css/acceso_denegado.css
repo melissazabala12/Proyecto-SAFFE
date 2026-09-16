@@ -1,0 +1,139 @@
+/* Reseteo básico y centrado total de la página */
+body {
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta principal */
+.contenedor {
+    background: white;
+    width: 420px; /* Ancho máximo para PC */
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.12); /* Sombra elegante */
+    border: 2px solid #dcdcdc;
+    text-align: center;
+}
+
+/* Alineación del logo y el título principal en la misma línea */
+.logo-saffe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; 
+}
+
+.logo { width: 60px; }
+
+.titulo-saffe {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1b7a3a; /* Verde institucional */
+}
+
+h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #1b7a3a;
+}
+
+.subtitulo {
+    margin-top: 0;
+    font-size: 14px;
+    color: #3a7d54;
+    text-transform: uppercase; /* Letras en mayúscula */
+}
+
+/* Contenedor de la información del error */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.icono {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* Textos de error en rojo */
+.mensaje h2 {
+    color: #d40000; 
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.mensaje p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+/* Caja de advertencia estilo alerta */
+.alerta {
+    background: #ffe6e6; /* Fondo rojo claro */
+    color: #a10000;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: 1px solid #ffb3b3;
+}
+
+/* Botón interactivo */
+.btn-reintentar {
+    margin: 35px auto 15px;
+    background: #1b7a3a;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reintentar:hover { 
+    background: #145c2b; /* Verde más oscuro al pasar el mouse */
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding-top: 12px;
+}
+
+/* Media Query: Adapta el diseño para que se vea bien en celulares (Evidencia 1) */
+@media (max-width: 600px) {
+    .contenedor {
+        width: 100%;
+        max-width: 380px;
+        padding: 30px 20px;
+        border: none;
+        box-shadow: none; /* Quitamos la sombra en móvil */
+    }
+    .btn-reintentar {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 0;
+    }
+}

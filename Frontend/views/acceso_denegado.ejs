@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso denegado - SAFFE</title>
+    <link rel="stylesheet" href="/css/acceso_denegado.css">
+</head>
+
+<body>
+    <main>
+        <section class="contenedor">
+            
+            <header class="encabezado">
+                <div class="logo-saffe">
+                    <img src="/img/logo.png" class="logo" alt="Logo">
+                    <span class="titulo-saffe">SAFFE</span>
+                </div>
+                <h3>Sistema de control de acceso</h3>
+                <p class="subtitulo">Ejército Nacional</p>
+            </header>
+
+            <div class="contenido">
+                <div class="mensaje">
+                    <img src="/img/denegado_icono.png" class="icono" alt="Icono denegado">
+                    <h2>Acceso Denegado</h2>
+                    <p>Usuario o contraseña incorrectos</p>
+                    <p>No tiene permisos para acceder a este sistema</p>
+                </div>
+
+                <div class="alerta">
+                    <img src="/img/advertencia.png" width="25" alt="Advertencia">
+                    Este incidente ha sido registrado por seguridad.
+                </div>
+            </div>
+
+            <button id="btn-reintentar" class="btn-reintentar">
+                Reintentando en 5s...
+            </button>
+
+            <footer>
+                Sistema de Control de Acceso - Ejército Nacional
+            </footer>
+        </section>
+    </main>
+
+    <script src="/js/acceso_denegado.js"></script>
+</body>
+</html>

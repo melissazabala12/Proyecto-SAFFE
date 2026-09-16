@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFFE - Registro</title>
+
+    <link rel="stylesheet" href="/css/registrarse.css">
+</head>
+
+<body>
+
+<header>
+    <img src="/img/logo.png" alt="logo SAFFE" width="100">
+    <h1>SAFFE</h1>
+    <h2>Registro de Personal</h2>
+</header>
+
+<main>
+
+    <section class="registro-container">
+
+        <form id="form-registro">
+
+            <div class="campo">
+                <label for="nombre">Nombres:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+            </div>
+
+            <div class="campo">
+                <label for="cedula">Cédula:</label>
+                <input type="number" id="cedula" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="campo">
+                <label for="rango">Rango Militar:</label>
+                <select id="rango" required>
+                    <option value="">Seleccionar rango</option>
+                    <option value="Soldado">Soldado</option>
+                    <option value="Cabo">Cabo</option>
+                    <option value="Sargento">Sargento</option>
+                    <option value="Teniente">Teniente</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="foto">Foto Facial (Perfil):</label>
+                <input type="file" id="foto" accept="image/*" required>
+
+                <img id="preview" src="#" alt="Vista previa"
+                     style="display:none; width:100px; margin-top:10px;">
+            </div>
+
+            <div id="mensaje-registro"></div>
+
+            <div class="botones">
+
+                <button type="button" class="btn-atras"
+                    onclick="window.location.href='/'">
+                    Atrás
+                </button>
+
+                <button type="submit" class="btn-registrar">
+                    Registrar
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="/js/registrarse.js"></script>
+
+</body>
+</html>

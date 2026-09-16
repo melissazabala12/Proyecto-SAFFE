@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFFE - Escaneo facial</title>
+
+    <link rel="stylesheet" href="/css/scaneo.css">
+</head>
+
+<body>
+
+<header>
+    <img src="/img/logo.png" alt="logo SAFFE" width="100">
+    <h1>SAFFE</h1>
+    <h2>Sistema de Control de Acceso Ejército Nacional</h2>
+</header>
+
+<main>
+
+    <section id="scanner">
+
+        <p>Mire al frente y muestre su rostro completo</p>
+
+        <video id="camara" autoplay playsinline></video>
+
+        <br><br>
+
+        <div class="controles">
+            <button id="botonscan">CAPTURAR ROSTRO</button>
+        </div>
+
+        <div id="contenedor-mensaje">
+            <p id="mensaje"></p>
+        </div>
+
+        <button id="btnAtras" onclick="window.location.href='/'">
+            Atrás
+        </button>
+
+        <canvas id="foto" style="display:none;"></canvas>
+
+    </section>
+
+</main>
+
+<script src="/js/scaneo.js"></script>
+
+</body>
+</html>
